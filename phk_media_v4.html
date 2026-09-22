@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHK Media | Fotografía & Videografía de Eventos de Baile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f17',
+                        cardBg: '#131b2e',
+                        accentBlue: '#00d2ff',
+                        accentPink: '#ff007f',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #00d2ff 0%, #ff007f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 210, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentPink selection:text-white">
+
+    <!-- Navegación -->
+    <nav class="fixed top-0 w-full z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo incrustado directamente en el HTML -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="./logo.png" alt="-Phk- Fotografía" class="h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://i.ibb.co/3ykxG3C/phkfoto6.png';">
+                <span class="text-xs font-semibold uppercase tracking-wider bg-slate-800 text-slate-300 px-2 py-1 rounded">Media</span>
+            </a>
+
+            <!-- Enlaces escritorio -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#inicio" class="hover:text-accentBlue transition">Inicio</a>
+                <a href="#proximos" class="hover:text-accentBlue transition">Próximos Eventos</a>
+                <a href="#galeria" class="hover:text-accentBlue transition">Galería de Eventos</a>
+                <a href="https://www.instagram.com/phkfotografia" target="_blank" class="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white px-4 py-2 rounded-full font-semibold transition shadow-lg shadow-pink-500/20">
+                    <i class="fab fa-instagram"></i> @phkfotografia
+                </a>
+            </div>
+
+            <!-- Botón Menú Móvil -->
+            <button id="menu-btn" class="md:hidden text-slate-300 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBg border-b border-slate-800 px-4 pt-2 pb-6 space-y-4">
+            <a href="#inicio" class="block py-2 text-slate-200 hover:text-accentBlue">Inicio</a>
+            <a href="#proximos" class="block py-2 text-slate-200 hover:text-accentBlue">Próximos Eventos</a>
+            <a href="#galeria" class="block py-2 text-slate-200 hover:text-accentBlue">Galería de Eventos</a>
+            <a href="https://www.instagram.com/phkfotografia" target="_blank" class="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-xl font-semibold">
+                <i class="fab fa-instagram"></i> @phkfotografia
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero / Inicio -->
+    <section id="inicio" class="pt-32 pb-20 px-4 max-w-7xl mx-auto text-center">
+        <div class="inline-block bg-slate-800/80 border border-slate-700 px-4 py-1.5 rounded-full text-xs font-medium text-accentBlue mb-6">
+            <i class="fas fa-video mr-1"></i> Fotografía & Videografía de Baile
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+            Capturando el ritmo en la pista con <span class="gradient-text">PHK Media</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-slate-400 text-base sm:text-lg mb-10">
+            Especializado en congelar la energía, la pasión y los mejores momentos de los congresos de Salsa, Bachata y Kizomba.
+        </p>
+        
+        <!-- Galería Destacada Home -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=600&q=80" alt="Baile social" class="rounded-2xl object-cover h-64 w-full border border-slate-800">
+            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Congreso de baile" class="rounded-2xl object-cover h-64 w-full border border-slate-800">
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80" alt="Show de Salsa" class="rounded-2xl object-cover h-64 w-full border border-slate-800">
+            <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=600&q=80" alt="Taller de Bachata" class="rounded-2xl object-cover h-64 w-full border border-slate-800">
+        </div>
+    </section>
+
+    <!-- Próximos Eventos (Calendario) -->
+    <section id="proximos" class="py-16 bg-cardBg/40 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center gap-3 mb-8">
+                <i class="far fa-calendar-alt text-2xl text-accentBlue"></i>
+                <h2 class="text-2xl sm:text-3xl font-bold">Próximos Eventos Confirmados</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-accentBlue/10 text-accentBlue p-3 rounded-xl text-center min-w-[70px]">
+                            <span class="block text-xs uppercase font-bold">Oct</span>
+                            <span class="text-xl font-extrabold">02-04</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Playabachata Peñíscola</h3>
+                            <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> Peñíscola, España</p>
+                        </div>
+                    </div>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
+                        <i class="fas fa-check-circle mr-1"></i> Acreditado
+                    </span>
+                </div>
+
+                <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-accentPink/10 text-accentPink p-3 rounded-xl text-center min-w-[70px]">
+                            <span class="block text-xs uppercase font-bold">Dic</span>
+                            <span class="text-xl font-extrabold">11-13</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Salsa Spain World Congress</h3>
+                            <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> España</p>
+                        </div>
+                    </div>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
+                        <i class="fas fa-check-circle mr-1"></i> Acreditado
+                    </span>
+                </div>
+
+                <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-accentPink/10 text-accentPink p-3 rounded-xl text-center min-w-[70px]">
+                            <span class="block text-xs uppercase font-bold">Dic</span>
+                            <span class="text-xl font-extrabold">18-20</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">MAD Bachata Festival</h3>
+                            <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> Madrid, España</p>
+                        </div>
+                    </div>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
+                        <i class="fas fa-check-circle mr-1"></i> Acreditado
+                    </span>
+                </div>
+
+                <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-purple-500/10 text-purple-400 p-3 rounded-xl text-center min-w-[70px]">
+                            <span class="block text-xs uppercase font-bold">Ene</span>
+                            <span class="text-xl font-extrabold">28-31</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Bachazouk Congress</h3>
+                            <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> Aranjuez, Madrid</p>
+                        </div>
+                    </div>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
+                        <i class="fas fa-check-circle mr-1"></i> Acreditado
+                    </span>
+                </div>
+
+                <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-purple-500/10 text-purple-400 p-3 rounded-xl text-center min-w-[70px]">
+                            <span class="block text-xs uppercase font-bold">Feb</span>
+                            <span class="text-xl font-extrabold">18-21</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">BS Benidorm</h3>
+                            <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> Benidorm, España</p>
+                        </div>
+                    </div>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
+                        <i class="fas fa-check-circle mr-1"></i> Acreditado
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Eventos Pasados -->
+    <section id="galeria" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-12 gap-4">
+            <div>
+                <h2 class="text-3xl font-bold">Galería de Eventos Pasados</h2>
+                <p class="text-slate-400 text-sm mt-1">Accede directamente a las carpetas completas en Google Drive.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-cardBg border border-slate-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80" alt="Bachata Spain" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Bachata Spain</h3>
+                        <p class="text-slate-400 text-sm mb-4">Ediciones disponibles: 2024, 2025 y 2026</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="https://drive.google.com" target="_blank" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-100 py-3 rounded-xl font-medium transition border border-slate-700">
+                        <i class="fab fa-google-drive text-emerald-400"></i> Ver Fotos en G Drive
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-cardBg border border-slate-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=600&q=80" alt="Salsa Spain" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Salsa Spain</h3>
+                        <p class="text-slate-400 text-sm mb-4">Ediciones disponibles: 2024 y 2025</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="https://drive.google.com" target="_blank" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-100 py-3 rounded-xl font-medium transition border border-slate-700">
+                        <i class="fab fa-google-drive text-emerald-400"></i> Ver Fotos en G Drive
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-cardBg border border-slate-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Playabachata" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Playabachata</h3>
+                        <p class="text-slate-400 text-sm mb-4">Edición disponible: 2025</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="https://drive.google.com" target="_blank" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-100 py-3 rounded-xl font-medium transition border border-slate-700">
+                        <i class="fab fa-google-drive text-emerald-400"></i> Ver Fotos en G Drive
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-cardBg border border-slate-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=600&q=80" alt="Madrid Summer" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Madrid Summer</h3>
+                        <p class="text-slate-400 text-sm mb-4">Ediciones disponibles: 2025 y 2026</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="https://drive.google.com" target="_blank" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-100 py-3 rounded-xl font-medium transition border border-slate-700">
+                        <i class="fab fa-google-drive text-emerald-400"></i> Ver Fotos en G Drive
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-black/60 border-t border-slate-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
+            <p class="text-slate-400 text-sm">© PHK Media / PHK Fotografía. Todos los derechos reservados.</p>
+            <div class="flex justify-center gap-6 text-xl">
+                <a href="https://www.instagram.com/phkfotografia" target="_blank" class="text-slate-400 hover:text-accentPink transition"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Menú Móvil -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
