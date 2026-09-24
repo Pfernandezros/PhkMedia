@@ -11,8 +11,8 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#0b0f17',
-                        cardBg: '#131b2e',
+                        darkBg: '#070a10',
+                        cardBg: '#0f172a',
                         accentBlue: '#00d2ff',
                         accentPink: '#ff007f',
                     }
@@ -31,9 +31,8 @@
         }
         .card-hover:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 210, 255, 0.3);
+            box-shadow: 0 10px 25px -5px rgba(0, 210, 255, 0.2);
         }
-        /* Ocultar barra de scroll */
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
@@ -43,15 +42,15 @@
         }
     </style>
 </head>
-<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentPink selection:text-white relative min-h-screen">
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentPink selection:text-white relative overflow-x-hidden min-h-screen">
 
-    <!-- CAPA DE FONDO ESCENARIO -->
-    <div class="fixed inset-0 -z-10 pointer-events-none opacity-15 bg-cover bg-center bg-no-repeat" 
-         style="background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1920&q=80');">
-    </div>
+    <!-- EFECTOS DE LUZ AMBIENTAL EN EL FONDO (GLOWS CSS) -->
+    <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[600px] h-[600px] bg-accentBlue/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+    <div class="fixed top-1/3 right-10 w-[500px] h-[500px] bg-accentPink/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-10 left-10 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
 
     <!-- BARRA PRINCIPAL / DE NAVEGACIÓN -->
-    <nav class="fixed top-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800/80">
+    <nav class="fixed top-0 w-full z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3">
                 <img src="imagenes/logo.png" alt="PHK Fotografía Logo" class="h-12 w-auto object-contain" onerror="this.onerror=null; this.src='logo.png';">
@@ -76,7 +75,7 @@
         </div>
 
         <!-- Menú Desplegable Móvil -->
-        <div id="mobile-menu" class="hidden md:hidden bg-cardBg/95 border-b border-slate-800 px-4 pt-2 pb-6 space-y-4">
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBg border-b border-slate-800 px-4 pt-2 pb-6 space-y-4">
             <a href="#inicio" class="block py-2 text-slate-200 hover:text-accentBlue">Inicio</a>
             <a href="#destacadas" class="block py-2 text-slate-200 hover:text-accentBlue">Mejores Tomas</a>
             <a href="#proximos" class="block py-2 text-slate-200 hover:text-accentBlue">Próximos Eventos</a>
@@ -88,8 +87,8 @@
     </nav>
 
     <!-- INICIO / HERO -->
-    <section id="inicio" class="pt-32 pb-16 px-4 max-w-7xl mx-auto text-center">
-        <div class="inline-block bg-slate-800/80 border border-slate-700/80 px-4 py-1.5 rounded-full text-xs font-medium text-accentBlue mb-6 backdrop-blur-sm">
+    <section id="inicio" class="pt-32 pb-16 px-4 max-w-7xl mx-auto text-center relative">
+        <div class="inline-block bg-slate-800/60 border border-slate-700/60 px-4 py-1.5 rounded-full text-xs font-medium text-accentBlue mb-6 backdrop-blur-sm">
             <i class="fas fa-camera mr-1"></i> Cobertura Oficial de Baile
         </div>
         <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
@@ -99,10 +98,10 @@
             Especializado en congelar los mejores momentos, shows, talleres y bailes sociales en congresos de Salsa, Bachata y Kizomba.
         </p>
         <div class="flex flex-wrap justify-center gap-4">
-            <a href="#galeria" class="bg-accentBlue text-darkBg px-6 py-3 rounded-xl font-bold hover:bg-cyan-300 transition flex items-center gap-2 shadow-lg shadow-cyan-500/10">
+            <a href="#galeria" class="bg-accentBlue text-darkBg px-6 py-3 rounded-xl font-bold hover:bg-cyan-300 transition flex items-center gap-2 shadow-lg shadow-cyan-500/20">
                 <i class="fas fa-folder-open"></i> Ver Galerías de Eventos
             </a>
-            <a href="https://www.instagram.com/phkfotografia" target="_blank" class="bg-slate-800/80 text-slate-200 border border-slate-700 px-6 py-3 rounded-xl font-bold hover:bg-slate-700/80 transition flex items-center gap-2 backdrop-blur-sm">
+            <a href="https://www.instagram.com/phkfotografia" target="_blank" class="bg-slate-800/80 text-slate-200 border border-slate-700 px-6 py-3 rounded-xl font-bold hover:bg-slate-700 transition flex items-center gap-2 backdrop-blur-sm">
                 <i class="fab fa-instagram"></i> Ir a Instagram
             </a>
         </div>
@@ -116,10 +115,10 @@
                 <p class="text-slate-400 text-sm mt-1">Desliza para explorar la selección fotográfica de momentos destacados.</p>
             </div>
             <div class="flex items-center gap-2">
-                <button id="scroll-left" class="p-3 bg-cardBg/80 border border-slate-800/80 rounded-xl hover:bg-slate-800/80 transition text-slate-300 backdrop-blur-sm">
+                <button id="scroll-left" class="p-3 bg-cardBg/80 border border-slate-800 rounded-xl hover:bg-slate-800 transition text-slate-300 backdrop-blur-sm">
                     <i class="fas fa-chevron-left"></i>
                 </button>
-                <button id="scroll-right" class="p-3 bg-cardBg/80 border border-slate-800/80 rounded-xl hover:bg-slate-800/80 transition text-slate-300 backdrop-blur-sm">
+                <button id="scroll-right" class="p-3 bg-cardBg/80 border border-slate-800 rounded-xl hover:bg-slate-800 transition text-slate-300 backdrop-blur-sm">
                     <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
@@ -131,7 +130,7 @@
     </section>
 
     <!-- PRÓXIMOS EVENTOS CONFIRMADOS -->
-    <section id="proximos" class="py-16 bg-cardBg/30 border-y border-slate-800/60 backdrop-blur-sm">
+    <section id="proximos" class="py-16 bg-cardBg/40 border-y border-slate-800/80 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center gap-3 mb-8">
                 <i class="far fa-calendar-alt text-2xl text-accentBlue"></i>
@@ -159,7 +158,7 @@
     </section>
 
     <!-- PIE DE PÁGINA -->
-    <footer class="bg-black/60 border-t border-slate-800/80 py-10 backdrop-blur-sm">
+    <footer class="bg-black/80 border-t border-slate-800 py-10 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
             <p class="text-slate-400 text-sm">&copy; PHK Media / PHK Fotografía. Todos los derechos reservados.</p>
             <div class="flex justify-center gap-6 text-xl">
@@ -206,7 +205,7 @@
                 // 1. Renderizar Carrusel de Mejores Capturas
                 if (data.destacadas && data.destacadas.length > 0) {
                     carouselContainer.innerHTML = data.destacadas.map(item => `
-                        <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] relative group overflow-hidden rounded-2xl border border-slate-800/80 h-80 flex-shrink-0 bg-cardBg/40">
+                        <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] relative group overflow-hidden rounded-2xl border border-slate-800 h-80 flex-shrink-0 bg-slate-900/50">
                             <img src="${item.imagen}" alt="${item.titulo}" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
                                 <span class="text-sm font-semibold text-white">${item.titulo}</span>
@@ -220,7 +219,7 @@
                     proximosContainer.innerHTML = data.proximos.map(item => {
                         const styleColor = colorClasses[item.color] || colorClasses['accentBlue'];
                         return `
-                            <div class="bg-cardBg/60 border border-slate-800/80 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 backdrop-blur-sm">
+                            <div class="bg-cardBg/80 border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 backdrop-blur-sm">
                                 <div class="flex items-center gap-4">
                                     <div class="${styleColor} p-3 rounded-xl text-center min-w-[70px]">
                                         <span class="block text-xs uppercase font-bold">${item.mes}</span>
@@ -243,16 +242,16 @@
                 if (data.pasados && data.pasados.length > 0) {
                     pasadosContainer.innerHTML = data.pasados.map(evento => {
                         const botonesEdiciones = evento.ediciones.map(ed => `
-                            <a href="${ed.url}" target="_blank" class="w-full flex items-center justify-between bg-slate-800/80 hover:bg-slate-700/80 text-slate-100 px-4 py-2.5 rounded-xl text-sm font-medium transition border border-slate-700/80">
+                            <a href="${ed.url}" target="_blank" class="w-full flex items-center justify-between bg-slate-800/90 hover:bg-slate-700 text-slate-100 px-4 py-2.5 rounded-xl text-sm font-medium transition border border-slate-700">
                                 <span class="flex items-center gap-2"><i class="fab fa-google-drive text-emerald-400"></i> Edición ${ed.ano}</span>
                                 <i class="fas fa-arrow-right text-xs text-slate-400"></i>
                             </a>
                         `).join('');
 
                         return `
-                            <div class="bg-cardBg/60 border border-slate-800/80 rounded-2xl overflow-hidden card-hover flex flex-col justify-between backdrop-blur-sm">
+                            <div class="bg-cardBg/80 border border-slate-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between backdrop-blur-sm">
                                 <div>
-                                    <div class="h-48 w-full bg-slate-900/60 p-6 flex items-center justify-center border-b border-slate-800/80">
+                                    <div class="h-48 w-full bg-slate-900/80 p-6 flex items-center justify-center border-b border-slate-800">
                                         <img src="${evento.logo}" alt="${evento.titulo} Logo" class="max-h-full max-w-full object-contain" onerror="this.onerror=null; this.src='imagenes/${evento.logo}';">
                                     </div>
                                     <div class="p-6">
