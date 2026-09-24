@@ -1,4 +1,74 @@
 {
+  "destacadas": [
+    {
+      "imagen": "imagenes/grupo1.jpg",
+      "titulo": "Photocall"
+    },
+    {
+      "imagen": "imagenes/grupo2.jpg",
+      "titulo": "Social"
+    },
+    {
+      "imagen": "imagenes/grupo3.jpg",
+      "titulo": "Artists"
+    },
+    {
+      "imagen": "imagenes/show5.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show8.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show3.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show4.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show9.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show11.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show7.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show2.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show1.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show10.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show6.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show12.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show13.jpg",
+      "titulo": "Stage Show"
+    },
+    {
+      "imagen": "imagenes/show14.jpg",
+      "titulo": "Stage Show"
+    }
+  ],
   "proximos": [
     {
       "mes": "Oct",
