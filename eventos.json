@@ -1,0 +1,59 @@
+[
+  {
+    "id": "bachata-spain",
+    "titulo": "Bachata Spain",
+    "descripcion": "Fotografías y cobertura oficial del evento.",
+    "logo": "BachataSpain.png",
+    "ediciones": [
+      { "ano": "2025", "url": "https://drive.google.com/drive/folders/1Npt1XZ9kz8BnpdY90Kow45vzQa6EwrGZ?usp=drive_link" },
+      { "ano": "2026", "url": "https://drive.google.com/drive/folders/1obHNUGuDG4iPwO8GZvLtqczF0C2t-on2?usp=drive_link" }
+    ]
+  },
+  {
+    "id": "salsa-spain",
+    "titulo": "Salsa Spain",
+    "descripcion": "Fotografía social, talleres y shows en vivo.",
+    "logo": "SalsaSpain.png",
+    "ediciones": [
+      { "ano": "2025", "url": "https://drive.google.com/drive/folders/1qbMKC_SYgkbY5t6UJsxOwb3WS7x3OjaA?usp=drive_link" }
+    ]
+  },
+  {
+    "id": "urban-bachata",
+    "titulo": "Urban Bachata",
+    "descripcion": "Cobertura en alta resolución del evento.",
+    "logo": "Urban.png",
+    "ediciones": [
+      { "ano": "2025", "url": "https://drive.google.com/drive/folders/1mj5g_MuCLCg-NMTfZoEv0Fitgzs-Y_hL?usp=drive_link" },
+      { "ano": "2026", "url": "https://drive.google.com/drive/folders/1QeDbcrYLgp-hL6-ReIPfS45wK3t6v3md?usp=drive_link" }
+    ]
+  },
+  {
+    "id": "madrid-summer",
+    "titulo": "Madrid Summer",
+    "descripcion": "Acceso a las galerías del congreso de verano.",
+    "logo": "Summer.png",
+    "ediciones": [
+      { "ano": "2025", "url": "https://drive.google.com/drive/folders/1aD0d9Mk8zydQMcIONBoxgbNffGQHSORu?usp=drive_link" },
+      { "ano": "2026", "url": "https://drive.google.com/drive/folders/1Tx7mn9JKJ3jeTBYvfGniFgtYTv_D0S1r?usp=drive_link" }
+    ]
+  },
+  {
+    "id": "mad-festival",
+    "titulo": "MAD Bachata Festival",
+    "descripcion": "Galerías fotográficas completas del festival.",
+    "logo": "Mad.png",
+    "ediciones": [
+      { "ano": "2025", "url": "https://drive.google.com/drive/folders/1BnLBtyKWdDfrjC3YZ3L6EypnqT64vX0Z?usp=drive_link" }
+    ]
+  },
+  {
+    "id": "playabachata",
+    "titulo": "PlayaBachata",
+    "descripcion": "Cobertura fotográfica oficial en Peñíscola.",
+    "logo": "logo.png",
+    "ediciones": [
+      { "ano": "2025", "url": "https://drive.google.com/drive/folders/1ufwRmY7TjIzSz-jlxQI7qHISNlX9dbNL?usp=drive_link" }
+    ]
+  }
+]
