@@ -1,71 +1,71 @@
 {
   "destacadas": [
     {
-      "imagen": "imagenes/grupo1.jpg",
+      "imagen": "imagenes/grupo1.webp",
       "titulo": "Photocall"
     },
     {
-      "imagen": "imagenes/grupo2.jpg",
+      "imagen": "imagenes/grupo2.webp",
       "titulo": "Social"
     },
     {
-      "imagen": "imagenes/grupo3.jpg",
+      "imagen": "imagenes/grupo3.webp",
       "titulo": "Artists"
     },
     {
-      "imagen": "imagenes/show5.jpg",
+      "imagen": "imagenes/show5.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show8.jpg",
+      "imagen": "imagenes/show8.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show3.jpg",
+      "imagen": "imagenes/show3.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show4.jpg",
+      "imagen": "imagenes/show4.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show9.jpg",
+      "imagen": "imagenes/show9.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show11.jpg",
+      "imagen": "imagenes/show11.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show7.jpg",
+      "imagen": "imagenes/show7.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show2.jpg",
+      "imagen": "imagenes/show2.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show1.jpg",
+      "imagen": "imagenes/show1.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show10.jpg",
+      "imagen": "imagenes/show10.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show6.jpg",
+      "imagen": "imagenes/show6.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show12.jpg",
+      "imagen": "imagenes/show12.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show13.jpg",
+      "imagen": "imagenes/show13.webp",
       "titulo": "Stage Show"
     },
     {
-      "imagen": "imagenes/show14.jpg",
+      "imagen": "imagenes/show14.webp",
       "titulo": "Stage Show"
     }
   ],
