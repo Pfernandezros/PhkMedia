@@ -132,7 +132,7 @@
         </div>
     </section>
 
-    <!-- PRÓXIMOS EVENTOS CONFIRMADOS -->
+    <!-- PRÓXIMOS EVENTOS CONFIRMADOS (DINÁMICO) -->
     <section id="proximos" class="py-16 bg-cardBg/40 border-y border-slate-800/60">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center gap-3 mb-8">
@@ -140,91 +140,13 @@
                 <h2 class="text-2xl sm:text-3xl font-bold">Próximos Eventos Confirmados</h2>
             </div>
 
-            <div class="space-y-4">
-                <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-accentBlue/10 text-accentBlue p-3 rounded-xl text-center min-w-[70px]">
-                            <span class="block text-xs uppercase font-bold">Oct</span>
-                            <span class="text-xl font-extrabold">02-04</span>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">Playabachata Peñíscola</h3>
-                            <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> Peñíscola, España</p>
-                        </div>
-                    </div>
-                    <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
-                        <i class="fas fa-check-circle mr-1"></i> Acreditado
-                    </span>
-                </div>
-
-                <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-accentPink/10 text-accentPink p-3 rounded-xl text-center min-w-[70px]">
-                            <span class="block text-xs uppercase font-bold">Dic</span>
-                            <span class="text-xl font-extrabold">11-13</span>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">Salsa Spain World Congress</h3>
-                            <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> España</p>
-                        </div>
-                    </div>
-                    <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
-                        <i class="fas fa-check-circle mr-1"></i> Acreditado
-                    </span>
-                </div>
-
-                <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-accentPink/10 text-accentPink p-3 rounded-xl text-center min-w-[70px]">
-                            <span class="block text-xs uppercase font-bold">Dic</span>
-                            <span class="text-xl font-extrabold">18-20</span>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">MAD Bachata Festival</h3>
-                            <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> Madrid, España</p>
-                        </div>
-                    </div>
-                    <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
-                        <i class="fas fa-check-circle mr-1"></i> Acreditado
-                    </span>
-                </div>
-
-                <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-purple-500/10 text-purple-400 p-3 rounded-xl text-center min-w-[70px]">
-                            <span class="block text-xs uppercase font-bold">Ene</span>
-                            <span class="text-xl font-extrabold">28-31</span>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">Bachazouk Congress</h3>
-                            <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> Aranjuez, Madrid</p>
-                        </div>
-                    </div>
-                    <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
-                        <i class="fas fa-check-circle mr-1"></i> Acreditado
-                    </span>
-                </div>
-
-                <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-purple-500/10 text-purple-400 p-3 rounded-xl text-center min-w-[70px]">
-                            <span class="block text-xs uppercase font-bold">Feb</span>
-                            <span class="text-xl font-extrabold">18-21</span>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">BS Benidorm</h3>
-                            <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> Benidorm, España</p>
-                        </div>
-                    </div>
-                    <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
-                        <i class="fas fa-check-circle mr-1"></i> Acreditado
-                    </span>
-                </div>
+            <div id="proximos-container" class="space-y-4">
+                <!-- Se genera automáticamente desde eventos.json -->
             </div>
         </div>
     </section>
 
-    <!-- GALERÍA DINÁMICA DESDE EVENTOS.JSON -->
+    <!-- GALERÍA DE EVENTOS PASADOS (DINÁMICO) -->
     <section id="galeria" class="py-20 max-w-7xl mx-auto px-4">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-12 gap-4">
             <div>
@@ -234,7 +156,7 @@
         </div>
 
         <div id="events-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Las tarjetas se generan automáticamente aquí desde eventos.json -->
+            <!-- Se genera automáticamente desde eventos.json -->
         </div>
     </section>
 
@@ -257,45 +179,83 @@
             menu.classList.toggle('hidden');
         });
 
+        // Mapeo de colores para las insignias de fecha
+        const colorClasses = {
+            'accentBlue': 'bg-accentBlue/10 text-accentBlue',
+            'accentPink': 'bg-accentPink/10 text-accentPink',
+            'purple-500': 'bg-purple-500/10 text-purple-400'
+        };
+
         // Cargar eventos dinámicamente desde eventos.json
-        async function cargarEventos() {
-            const container = document.getElementById('events-grid');
+        async function cargarDatos() {
+            const proximosContainer = document.getElementById('proximos-container');
+            const pasadosContainer = document.getElementById('events-grid');
+
             try {
                 const response = await fetch('eventos.json');
-                const eventos = await response.json();
+                const data = await response.json();
 
-                container.innerHTML = eventos.map(evento => {
-                    const botonesEdiciones = evento.ediciones.map(ed => `
-                        <a href="${ed.url}" target="_blank" class="w-full flex items-center justify-between bg-slate-800 hover:bg-slate-700 text-slate-100 px-4 py-2.5 rounded-xl text-sm font-medium transition border border-slate-700">
-                            <span class="flex items-center gap-2"><i class="fab fa-google-drive text-emerald-400"></i> Edición ${ed.ano}</span>
-                            <i class="fas fa-arrow-right text-xs text-slate-400"></i>
-                        </a>
-                    `).join('');
-
-                    return `
-                        <div class="bg-cardBg border border-slate-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
-                            <div>
-                                <div class="h-48 w-full bg-slate-900/80 p-6 flex items-center justify-center border-b border-slate-800/80">
-                                    <img src="${evento.logo}" alt="${evento.titulo} Logo" class="max-h-full max-w-full object-contain">
+                // 1. Renderizar Próximos Eventos
+                if (data.proximos && data.proximos.length > 0) {
+                    proximosContainer.innerHTML = data.proximos.map(item => {
+                        const styleColor = colorClasses[item.color] || colorClasses['accentBlue'];
+                        return `
+                            <div class="bg-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="${styleColor} p-3 rounded-xl text-center min-w-[70px]">
+                                        <span class="block text-xs uppercase font-bold">${item.mes}</span>
+                                        <span class="text-xl font-extrabold">${item.dias}</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold">${item.titulo}</h3>
+                                        <p class="text-slate-400 text-sm"><i class="fas fa-map-marker-alt text-xs mr-1"></i> ${item.ubicacion}</p>
+                                    </div>
                                 </div>
-                                <div class="p-6">
-                                    <h3 class="text-xl font-bold mb-2">${evento.titulo}</h3>
-                                    <p class="text-slate-400 text-sm mb-4">${evento.descripcion}</p>
+                                <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full w-max border border-emerald-500/20">
+                                    <i class="fas fa-check-circle mr-1"></i> ${item.estado}
+                                </span>
+                            </div>
+                        `;
+                    }).join('');
+                }
+
+                // 2. Renderizar Galerías Pasadas
+                if (data.pasados && data.pasados.length > 0) {
+                    pasadosContainer.innerHTML = data.pasados.map(evento => {
+                        const botonesEdiciones = evento.ediciones.map(ed => `
+                            <a href="${ed.url}" target="_blank" class="w-full flex items-center justify-between bg-slate-800 hover:bg-slate-700 text-slate-100 px-4 py-2.5 rounded-xl text-sm font-medium transition border border-slate-700">
+                                <span class="flex items-center gap-2"><i class="fab fa-google-drive text-emerald-400"></i> Edición ${ed.ano}</span>
+                                <i class="fas fa-arrow-right text-xs text-slate-400"></i>
+                            </a>
+                        `).join('');
+
+                        return `
+                            <div class="bg-cardBg border border-slate-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
+                                <div>
+                                    <div class="h-48 w-full bg-slate-900/80 p-6 flex items-center justify-center border-b border-slate-800/80">
+                                        <img src="${evento.logo}" alt="${evento.titulo} Logo" class="max-h-full max-w-full object-contain">
+                                    </div>
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-bold mb-2">${evento.titulo}</h3>
+                                        <p class="text-slate-400 text-sm mb-4">${evento.descripcion}</p>
+                                    </div>
+                                </div>
+                                <div class="p-6 pt-0 space-y-2">
+                                    ${botonesEdiciones}
                                 </div>
                             </div>
-                            <div class="p-6 pt-0 space-y-2">
-                                ${botonesEdiciones}
-                            </div>
-                        </div>
-                    `;
-                }).join('');
+                        `;
+                    }).join('');
+                }
+
             } catch (error) {
-                console.error('Error al cargar los eventos:', error);
-                container.innerHTML = `<p class="text-red-400">Error al cargar las galerías de eventos.</p>`;
+                console.error('Error al cargar los datos:', error);
+                proximosContainer.innerHTML = `<p class="text-red-400 text-sm">Error al cargar la agenda de eventos.</p>`;
+                pasadosContainer.innerHTML = `<p class="text-red-400 text-sm">Error al cargar las galerías de eventos.</p>`;
             }
         }
 
-        document.addEventListener('DOMContentLoaded', cargarEventos);
+        document.addEventListener('DOMContentLoaded', cargarDatos);
     </script>
 </body>
 </html>
