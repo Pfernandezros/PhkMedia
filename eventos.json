@@ -177,6 +177,15 @@
       "ediciones": [
         { "ano": "2025", "url": "https://drive.google.com/drive/folders/1HTe3QWWkMnFjEdziE7MOUBGaREk34kLf?usp=drive_link" }
       ]
+    },
+	{
+      "id": "Bachata Open",
+      "titulo": "Bachata Open",
+      "descripcion": "Bachata Open",
+      "logo": "BachataOpen.png",
+      "ediciones": [
+        { "ano": "2025", "url": "https://drive.google.com/drive/folders/1lUkBcMTf0lf9zEFZs0DfCsUHpflmwJys?usp=drive_link" }
+      ]
     }
   ]
 }
